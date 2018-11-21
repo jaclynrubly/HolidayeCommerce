@@ -1,0 +1,908 @@
+#holiday-central {
+  background-color: #fff;
+  color: #fff;
+  font-family: "helvetica lt std", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  list-style: none;
+  margin: 0;
+  max-width: 960px;
+  min-width: 320px;
+  position: relative;
+  width: 100%;
+  /*---- Kit / Get The Look Pages ----*/
+  /*---- Deals Page ----*/
+  /*---- Products / Figures ----*/
+}
+#holiday-central * {
+  box-sizing: border-box;
+}
+#holiday-central *:before, #holiday-central *:after {
+  box-sizing: inherit;
+}
+#holiday-central a {
+  color: #fff;
+  text-decoration: none;
+}
+#holiday-central a:hover {
+  color: #85764e;
+  text-decoration: none;
+}
+@media screen and (min-width: 960px) {
+  #holiday-central {
+    margin: 0 auto;
+  }
+}
+#holiday-central .clear:before, #holiday-central .clear:after {
+  content: " ";
+  display: table;
+}
+#holiday-central .clear:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+#holiday-central header {
+  color: #fff;
+  font-family: "helvetica lt std", Arial, Helvetica, sans-serif;
+  height: 50px;
+  margin: 5px 0;
+  max-width: 1200px;
+  min-width: 320px;
+  position: relative;
+  width: 100%;
+}
+#holiday-central header h1 {
+  background: #000;
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 200;
+  height: 50px;
+  line-height: 2.5em;
+  margin: 0;
+  padding-left: 10px;
+  text-transform: uppercase;
+  width: 100%;
+}
+@media screen and (min-width: 720px) {
+  #holiday-central header h1 {
+    float: left;
+    width: 500px;
+    padding: 0 0 0 20px;
+  }
+}
+#holiday-central header .hc-tag {
+  color: #fff;
+  display: none;
+  float: right;
+  font-size: 1.1em;
+  font-weight: 400;
+  position: relative;
+}
+@media screen and (min-width: 480px) {
+  #holiday-central header .hc-tag {
+    display: inline-block;
+    top: -50px;
+  }
+}
+@media screen and (min-width: 720px) {
+  #holiday-central header .hc-tag {
+    color: #000;
+    top: -5px;
+  }
+}
+#holiday-central .template {
+  background-color: #eaeaea;
+  color: #fff;
+}
+#holiday-central .kit {
+  border: #c7c8ca solid 1px;
+  padding: 0 20px 20px;
+}
+#holiday-central .kit-title {
+  color: #000;
+  font-weight: 200;
+  height: 35px;
+  line-height: 2.25em;
+  margin: 5px 0;
+  text-transform: uppercase;
+  width: 200px;
+}
+#holiday-central .deal {
+  background: #fff;
+}
+#holiday-central .deal-title {
+  background: #000;
+  color: #85764e;
+  font-weight: 400;
+  height: 35px;
+  line-height: 2em;
+  margin: 5px 0;
+  padding: 0 10px;
+  text-transform: uppercase;
+  width: 200px;
+}
+#holiday-central .product {
+  background-color: #333;
+  color: #eee;
+}
+#holiday-central .top {
+  position: absolute;
+  bottom: 0;
+}
+@media screen and (min-width: 960px) {
+  #holiday-central .top {
+    top: 0;
+  }
+}
+#holiday-central .bottom {
+  bottom: 0;
+  position: absolute;
+}
+#holiday-central .short {
+  height: 198px;
+}
+#holiday-central .tall {
+  height: 198px;
+  transition: height 0.75s;
+}
+@media screen and (min-width: 960px) {
+  #holiday-central .tall {
+    height: 396px;
+  }
+}
+
+/*---- Buttons ----*/
+.hero {
+  background: #444;
+  height: 400px;
+  width: 100%;
+}
+.hero .content {
+  height: 100%;
+  margin: 0 auto;
+  max-width: 960px;
+  min-width: 320px;
+  position: relative;
+  width: 100%;
+}
+.hero .content .headline {
+  margin: 0 auto;
+  max-width: 500px;
+  position: relative;
+}
+@media screen and (min-width: 960px) {
+  .hero .content .headline {
+    max-width: 960px;
+  }
+}
+.hero .content .headline-left .four-line, .hero .content .headline-right .four-line {
+  right: 10px;
+  bottom: -2px;
+  left: 10px;
+}
+@media screen and (min-width: 680px) {
+  .hero .content .headline-left .four-line, .hero .content .headline-right .four-line {
+    right: 40px;
+    bottom: -3px;
+    left: 40px;
+  }
+}
+.hero .content .headline-left .three-line, .hero .content .headline-right .three-line {
+  right: 10px;
+  bottom: -35px;
+  left: 10px;
+}
+@media screen and (min-width: 680px) {
+  .hero .content .headline-left .three-line, .hero .content .headline-right .three-line {
+    right: 40px;
+    bottom: -42px;
+    left: 40px;
+  }
+}
+.hero .content .headline-left .three-line-long, .hero .content .headline-right .three-line-long {
+  right: 10px;
+  bottom: -34px;
+  left: 10px;
+}
+@media screen and (min-width: 680px) {
+  .hero .content .headline-left .three-line-long, .hero .content .headline-right .three-line-long {
+    right: 40px;
+    bottom: -29px;
+    left: 40px;
+  }
+}
+.hero .content .headline-left h2, .hero .content .headline-right h2 {
+  font-size: 1.5em;
+  margin: 0;
+  position: absolute;
+  text-shadow: 1px 1px rgba(255, 255, 255, 0.15);
+  text-transform: uppercase;
+}
+.hero .content .headline-left h2 h2 > *, .hero .content .headline-right h2 h2 > * {
+  margin: 0;
+  padding: 0;
+}
+.hero .content .headline-left h2 .title-01, .hero .content .headline-right h2 .title-01 {
+  display: block;
+  font-size: .75em;
+  font-weight: 200;
+  line-height: .85em;
+}
+@media screen and (min-width: 680px) {
+  .hero .content .headline-left h2 .title-01, .hero .content .headline-right h2 .title-01 {
+    font-size: .65em;
+    line-height: 1.1em;
+  }
+}
+.hero .content .headline-left h2 .title-02, .hero .content .headline-right h2 .title-02 {
+  display: block;
+  font-family: bodoni, serif;
+  font-size: 1.5em;
+  font-weight: 400;
+  letter-spacing: -.0625em;
+  line-height: .75em;
+  margin: -20px 0 0;
+}
+@media screen and (min-width: 680px) {
+  .hero .content .headline-left h2 .title-02, .hero .content .headline-right h2 .title-02 {
+    font-size: 2em;
+    margin: -15px 0 0;
+  }
+}
+.hero .content .headline-left h2 .title-03, .hero .content .headline-right h2 .title-03 {
+  display: block;
+  font-family: bodoni, serif;
+  font-size: 3em;
+  font-weight: 400;
+  letter-spacing: -.0625em;
+  line-height: .75em;
+  margin: -20px 0 0;
+}
+@media screen and (min-width: 680px) {
+  .hero .content .headline-left h2 .title-03, .hero .content .headline-right h2 .title-03 {
+    font-size: 5em;
+    line-height: .7em;
+    margin: -15px 0 0;
+  }
+}
+.hero .content .headline-left h2 .title-03-long, .hero .content .headline-right h2 .title-03-long {
+  display: block;
+  font-family: bodoni, serif;
+  font-size: 1.75em;
+  font-weight: 400;
+  letter-spacing: -.0625em;
+  line-height: .75em;
+  margin: -20px 0 0;
+}
+@media screen and (min-width: 680px) {
+  .hero .content .headline-left h2 .title-03-long, .hero .content .headline-right h2 .title-03-long {
+    font-size: 5em;
+    line-height: .5em;
+    margin: -5px 0 0;
+  }
+}
+.hero .content .headline-left h2 .title-04, .hero .content .headline-right h2 .title-04 {
+  display: block;
+  font-family: bodoni, serif;
+  font-size: 1.5em;
+  font-weight: 400;
+  letter-spacing: -.0625em;
+  line-height: .5em;
+  margin: -30px 0 0;
+}
+@media screen and (min-width: 680px) {
+  .hero .content .headline-left h2 .title-04, .hero .content .headline-right h2 .title-04 {
+    font-size: 2.5em;
+    line-height: .5em;
+    margin: -25px 0 0;
+  }
+}
+.hero .content .headline-left {
+  float: left;
+}
+.hero .content .headline-right {
+  float: right;
+}
+.hero .content .headline-right h2 {
+  text-align: right;
+}
+.hero .content ul {
+  margin: 0 auto;
+  max-width: 275px;
+  width: 100%;
+}
+@media screen and (min-width: 320px) {
+  .hero .content ul {
+    max-width: 960px;
+  }
+}
+.hero .content ul li {
+  align: top;
+  float: right;
+  margin: 11px;
+  max-width: 285px;
+  min-width: 275px;
+}
+.hero .content ul li figure {
+  height: 300px;
+  margin: 20px;
+  position: relative;
+}
+.hero .content ul li figure figcaption {
+  background: rgba(0, 0, 0, 0.8);
+  height: 75px;
+  padding: 5px;
+  width: 100%;
+}
+
+nav {
+  background: #000;
+  color: #fff;
+  margin: 0;
+  overflow: auto;
+  padding: 10px 0;
+  position: relative;
+  width: 100%;
+  z-index: 99;
+}
+@media screen and (min-width: 680px) {
+  nav {
+    padding: 10px;
+  }
+}
+nav ul {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+  font-size: .75em;
+  list-style: none;
+  margin: 0 10px;
+  text-transform: uppercase;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  color: #85764e;
+  text-decoration: none;
+}
+
+/*---- Main Body Styles ----*/
+.interior-title {
+  margin: 10px auto -10px;
+  max-width: 960px;
+  min-width: 320px;
+  width: 100%;
+}
+.interior-title h3 {
+  color: #000;
+  font-family: "bodoni", "Times New Roman", Times, serif;
+  font-size: 1.75em;
+  font-weight: 400;
+  height: 50px;
+  line-height: 1em;
+  padding: 0 10px;
+  position: relative;
+  text-align: left;
+  text-transform: uppercase;
+  width: 100%;
+}
+.interior-title h3 a {
+  text-decoration: none;
+}
+
+.grid {
+  background-color: #fff;
+  margin: 10px 0 40px;
+  max-width: 960px;
+  min-width: 320px;
+  padding: 0 0 40px;
+  width: 100%;
+}
+@media screen and (min-width: 960px) {
+  .grid {
+    margin: 10px auto 50px;
+    width: 880px;
+  }
+}
+.grid:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.grid h3 {
+  color: #000;
+  font-family: "bodoni", "Times New Roman", Times, serif;
+  font-size: 1.75em;
+  font-weight: 400;
+  line-height: 1em;
+  margin: 0;
+  padding: 10px 10px;
+  position: relative;
+  text-align: left;
+  text-transform: uppercase;
+  width: 100%;
+}
+@media screen and (min-width: 680px) {
+  .grid h3 {
+    padding: 10px 20px;
+  }
+}
+.grid h3 a {
+  text-decoration: none;
+}
+.grid ul {
+  margin: 0;
+  max-width: 900px;
+  min-width: 200px;
+  padding: 0 10px;
+}
+@media screen and (min-width: 680px) {
+  .grid ul {
+    padding: 0 20px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .grid ul {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+.grid ul:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+@media screen and (min-width: 960px) {
+  .grid ul {
+    margin: 0 auto;
+  }
+}
+.grid ul li {
+  align: top;
+}
+.grid ul li a > figure:hover {
+  border: 1px solid #85764e;
+}
+.grid ul li figure {
+  border: 1px solid #eae3d0;
+  font-size: .65em;
+  margin: 0;
+  position: relative;
+}
+.grid ul li figure figcaption {
+  background: rgba(0, 0, 0, 0.8);
+  /* Safari 4-5, Chrome 1-9 */
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.8)), color-stop(0.25, rgba(0, 0, 0, 0.6)), color-stop(0.5, rgba(0, 0, 0, 0.4)), color-stop(0.95, rgba(0, 0, 0, 0.1)));
+  /* Safari 5.1+, Chrome 10+ */
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6) 25%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.1) 95%);
+  /* Firefox 3.6+ */
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6) 25%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.1) 95%);
+  /* IE 10 */
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6) 25%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.1) 95%);
+  /* Opera 11.10+ */
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6) 25%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.1) 95%);
+  height: 80px;
+  line-height: 1.25em;
+  padding: 10px;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/*---- Template Styles ----*/
+/*---- Holiday Central / Beauty/ Top Gifts ----*/
+.grid-a {
+  padding: 0 0 25px;
+}
+@media screen and (min-width: 800px) {
+  .grid-a {
+    padding: 0 0 60px;
+  }
+}
+.grid-a h3 {
+  background: #000;
+  color: #fff;
+  height: 80px;
+  line-height: 2.5em;
+  margin: 0;
+  max-width: 500px;
+  min-width: 320px;
+  text-align: left;
+  text-transform: uppercase;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transform: translateY(0);
+  transition: transform .75s;
+  z-index: 999;
+}
+@media screen and (min-width: 760px) {
+  .grid-a h3 {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 960px) {
+  .grid-a h3 {
+    transform: translateY(240px);
+  }
+}
+.grid-a ul {
+  margin: 25px auto 0;
+  max-width: 200px;
+  padding: 0;
+}
+@media screen and (min-width: 400px) {
+  .grid-a ul {
+    max-width: 400px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .grid-a ul {
+    max-width: 600px;
+  }
+}
+@media screen and (min-width: 800px) {
+  .grid-a ul {
+    margin: 0 auto;
+    max-width: 800px;
+  }
+}
+.grid-a ul:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.grid-a ul li {
+  margin: 0 auto;
+}
+@media screen and (min-width: 400px) {
+  .grid-a ul li {
+    float: left;
+  }
+}
+.grid-a ul li a > figure:hover {
+  border: 1px solid #85764e;
+}
+.grid-a ul li figure {
+  border: 1px solid #eee;
+}
+@media screen and (min-width: 400px) {
+  .grid-a ul li:first-child {
+    float: left;
+  }
+}
+@media screen and (min-width: 960px) {
+  .grid-a ul li:first-child {
+    float: right;
+  }
+}
+
+/*---- Health & Nutrition / Get the Look ----*/
+.grid-b {
+  padding: 0 0 40px;
+}
+.grid-b ul li {
+  float: left;
+  list-style: none;
+  margin-bottom: 5px;
+  margin-right: .5%;
+  max-width: 260px;
+  min-width: 256px;
+}
+@media screen and (min-width: 640px) {
+  .grid-b ul li {
+    margin-right: 4%;
+  }
+  .grid-b ul li:last-child {
+    margin-right: 0;
+  }
+}
+.grid-b ul li figure {
+  height: 300px;
+}
+.grid-b ul li ul {
+  padding: 0;
+  width: 100%;
+}
+.grid-b ul li ul li {
+  float: left;
+  list-style: none;
+  margin: 5px 2px;
+  min-width: 100px;
+  width: 48%;
+}
+.grid-b ul li ul li figure {
+  border: #eae3d0 solid 1px;
+  height: 200px;
+  position: relative;
+}
+.grid-b ul li ul li figure figcaption {
+  background: rgba(0, 0, 0, 0.8);
+  /* Safari 4-5, Chrome 1-9 */
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.8)), color-stop(0.25, rgba(0, 0, 0, 0.6)), color-stop(0.5, rgba(0, 0, 0, 0.4)), color-stop(0.75, rgba(0, 0, 0, 0.1)));
+  /* Safari 5.1+, Chrome 10+ */
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6) 25%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.1) 75%);
+  /* Firefox 3.6+ */
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6) 25%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.1) 75%);
+  /* IE 10 */
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6) 25%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.1) 75%);
+  /* Opera 11.10+ */
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6) 25%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.1) 75%);
+  /* Safari 4-5, Chrome 1-9 */
+  /* Safari 5.1+, Chrome 10+ */
+  /* Firefox 3.6+ */
+  /* IE 10 */
+  /* Opera 11.10+ */
+  color: #fff;
+  height: 100px;
+  line-height: 1.25em;
+  padding: 10px 5px 0;
+  width: 100%;
+}
+
+/*---- Home & Garden / Top Toys / Top Electronics / Top Entertainment ----*/
+.grid-c ul {
+  margin: 0 25px;
+  padding-top: 20px;
+}
+@media screen and (min-width: 960px) {
+  .grid-c ul {
+    margin: 0 auto 10px;
+  }
+}
+.grid-c ul li {
+  float: left;
+  margin-right: 2%;
+  margin-bottom: 5px;
+}
+.grid-c ul li:last-child {
+  margin-right: 0;
+}
+.grid-c ul li figure {
+  height: 250px;
+}
+
+/*---- 25 Days of Deals ----*/
+.grid-d {
+  background: #eaeaea;
+  padding: 0 0 80px;
+}
+.grid-d ul li {
+  float: left;
+  margin: 5px 32px;
+  max-width: 265px;
+  min-width: 256px;
+}
+@media screen and (min-width: 480px) {
+  .grid-d ul li {
+    margin: 5px;
+  }
+}
+.grid-d ul li figure {
+  height: 300px;
+  margin: 20px;
+}
+
+/*---- Affiliate ----*/
+.grid-e ul li {
+  float: left;
+  margin-right: 2.5%;
+  margin-bottom: 5px;
+}
+.grid-e ul li:last-child {
+  margin-right: 0;
+}
+.grid-e ul li figure {
+  height: 250px;
+}
+
+/*---- Home & Garden / Top Toys / Top Electronics / Top Entertainment ----*/
+.grid-f ul {
+  margin: 0;
+}
+@media screen and (min-width: 960px) {
+  .grid-f ul {
+    margin: 0 auto;
+  }
+}
+.grid-f ul li {
+  float: left;
+  margin-right: 4%;
+  margin-bottom: 5px;
+}
+.grid-f ul li:last-child {
+  margin-right: 0;
+}
+.grid-f ul li figure {
+  background-size: 125px 125px;
+  height: 250px;
+}
+
+.grid-g {
+  margin-bottom: 20px;
+  padding: 10px 0;
+}
+.grid-g ul {
+  margin: 0;
+}
+@media screen and (min-width: 960px) {
+  .grid-g ul {
+    margin: 0 auto;
+  }
+}
+.grid-g ul li {
+  float: left;
+  margin-right: 4%;
+  margin-bottom: 5px;
+}
+.grid-g ul li:last-child {
+  margin-right: 4%;
+}
+@media screen and (min-width: 640px) {
+  .grid-g ul li {
+    margin-right: 4%;
+  }
+  .grid-g ul li:last-child {
+    margin-right: 0;
+  }
+}
+.grid-g ul li figure {
+  height: 185px;
+  width: 185px;
+}
+
+.grid-h {
+  margin-bottom: 20px;
+  padding: 10px 0;
+}
+.grid-h ul {
+  margin: 0;
+}
+@media screen and (min-width: 960px) {
+  .grid-h ul {
+    margin: 0 auto;
+  }
+}
+.grid-h ul li {
+  float: left;
+  margin-right: 2%;
+  margin-bottom: 5px;
+}
+.grid-h ul li:last-child {
+  margin-right: 0;
+}
+.grid-h ul li figure {
+  height: 120px;
+  width: 120px;
+}
+
+.grid-i {
+  margin-bottom: 20px;
+  padding: 10px 0;
+}
+.grid-i ul {
+  margin: 0;
+}
+@media screen and (min-width: 960px) {
+  .grid-i ul {
+    margin: 0 auto;
+  }
+}
+.grid-i ul li {
+  float: left;
+  margin-right: 0;
+  margin-bottom: 5px;
+}
+.grid-i ul li figure {
+  max-width: 840px;
+  min-width: 320px;
+  width: 100%;
+}
+
+/*---- Grid ----*/
+.col {
+  display: block;
+}
+
+.span_1 {
+  background: #555;
+  max-width: 880px;
+  min-width: 320px;
+  width: 100%;
+}
+
+.span_1_of_2 {
+  background: #555;
+  height: 400px;
+  min-width: 320px;
+  width: 50%;
+}
+
+.span_1_of_3 {
+  width: 30%;
+}
+
+.span_1_of_4 {
+  min-width: 198px;
+  width: 25%;
+}
+
+.span_2_of_4 {
+  min-width: 198px;
+  width: 25%;
+  transition: min-width 0.75s;
+}
+@media screen and (min-width: 960px) {
+  .span_2_of_4 {
+    min-width: 400px;
+  }
+}
+
+.span_1_of_4-b {
+  min-width: 180px;
+  width: 22%;
+}
+
+.span_1_of_5 {
+  min-width: 140px;
+  width: 18%;
+}
+
+.span_1_of_6 {
+  min-width: 120px;
+  width: 15%;
+}
+
+/*---- Buttons ----*/
+#holiday-central .button {
+  background: #85764e;
+  border: none;
+  border-radius: 0;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-size: .75em;
+  font-weight: 400;
+  height: 35px;
+  line-height: 3em;
+  margin: 20px auto 0;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 150px;
+}
+@media screen and (min-width: 760px) {
+  #holiday-central .button {
+    margin: 30px auto -25px;
+  }
+}
+#holiday-central .button:hover {
+  background: #222;
+  border: none;
+  color: #fff;
+  text-decoration: none;
+}
+#holiday-central .kit-btn {
+  bottom: 0;
+  border: none;
+  display: block;
+  font-weight: 400;
+  line-height: 3.5em;
+  height: 30px;
+  margin: 5px -5px 0;
+  position: absolute;
+  width: 100%;
+}
+#holiday-central .deal-btn {
+  bottom: 0;
+  margin: 0 auto 10px;
+  width: 240px;
+}

@@ -1,0 +1,1078 @@
+// _variables.scss
+
+
+$color-a: #fff;
+$color-b: #85764e;
+$color-c: #000;
+$color-d: #222;
+$color-e: #eee;
+$color-f: #eae3d0;
+
+$theme-a: #000;
+$theme-b: rgba(#000, 0.8);
+$theme-c: #eaeaea;
+$theme-d: #fff;
+$theme-f: #333;
+$theme-g: rgba(#000, 0.6);
+$theme-h: rgba(#000, 0.4);
+$theme-i: rgba(#000, 0.1);
+
+$padding: 5px;
+
+$width-a: 100%;
+$width-b: 1200px;
+$width-c: 960px;
+$width-d: 320px;
+
+$font-a: 'bodoni', 'Times New Roman', Times, serif;
+$font-b: 'helvetica lt std', Arial, Helvetica, sans-serif;
+
+
+#holiday-central{
+  background-color: $theme-d;
+  color: $color-a;
+  font-family: $font-b;
+  font-size: 16px;
+  list-style: none;
+  margin: 0;
+  max-width: $width-c;
+  min-width: $width-d;
+  position: relative;
+  width: $width-a;
+
+  *{box-sizing: border-box; &:before, &:after{box-sizing: inherit;}}
+
+  a{
+    color: $color-a;
+    text-decoration: none;
+
+    &:hover{
+      color: $color-b;
+      text-decoration: none;
+    }
+  }
+
+  @media screen and (min-width: 960px){
+    margin: 0 auto;
+  }
+
+  .clear{
+    &:before, &:after{
+      content:" ";
+      display:table;
+    }
+    
+    &:after {
+      clear:both;
+      content: "";
+      display: table;
+    }
+  }
+
+  header{
+    color: $color-a;
+    font-family: $font-b;
+    height: 50px;
+    margin: 5px 0;
+    max-width: $width-b;
+    min-width: $width-d;
+    position: relative;
+    width: $width-a;
+
+
+    h1{
+      background: $theme-a;
+      color: $color-a;
+      font-size: 1.5em;
+      font-weight: 200;
+      height: 50px;
+      line-height: 2.5em;
+      margin: 0;
+      padding-left: 10px;
+      text-transform: uppercase;
+      width: 100%;
+
+      @media screen and (min-width: 720px){
+        float: left;
+        width: 500px;
+        padding: 0 0 0 20px;
+      }
+    }
+
+    .hc-tag{
+      color: #fff;
+      display: none;
+      float: right;
+      font-size: 1.1em;
+      font-weight: 400;
+      position: relative;
+
+      @media screen and (min-width: 480px){
+        display: inline-block;
+        top: -50px;
+      }
+
+      @media screen and (min-width: 720px){
+        color: #000;
+        top: -5px;
+      }
+    }
+  }
+
+
+  .template{
+    background-color: $theme-c;
+    color: $color-a;
+  }
+
+  /*---- Kit / Get The Look Pages ----*/
+
+  .kit{
+    border: #c7c8ca solid 1px;
+    padding: 0 20px 20px;
+  }
+
+  .kit-title{
+    color: $color-c;
+    font-weight: 200;
+    height: 35px;
+    line-height: 2.25em;
+    margin: 5px 0;
+    text-transform: uppercase;
+    width: 200px;
+  }
+
+  /*---- Deals Page ----*/
+
+  .deal{
+    background: $theme-d;
+  }
+
+
+  .deal-title{
+    background: $theme-a;
+    color: $color-b;
+    font-weight: 400;
+    height: 35px;
+    line-height: 2em;
+    margin: 5px 0;
+    padding: 0 10px;
+    text-transform: uppercase;
+    width: 200px;
+  }
+
+  /*---- Products / Figures ----*/
+
+  .product{
+    background-color: #333;
+    color: $color-e;
+  }
+
+  .top{
+    position: absolute;
+    bottom: 0;
+
+    @media screen and (min-width: 960px){
+        top: 0;
+      }
+  }
+
+  .bottom{
+    bottom: 0;
+    position: absolute;
+  }
+
+  .short{
+    height: 198px;
+  }
+
+  .tall{
+    height: 198px;
+    transition: height 0.75s;
+    
+    @media screen and (min-width: 960px){
+      height: 396px;
+    }
+  }
+}
+
+
+// _head.scss
+
+/*---- Buttons ----*/
+
+.hero{
+  background: #444;
+  height: 400px;
+  width: $width-a;
+
+  .content{
+    height: 100%;
+    margin: 0 auto;
+    max-width: $width-c;
+    min-width: $width-d;
+    position: relative;
+    width: $width-a;
+
+    .headline{
+
+      margin: 0 auto;
+      max-width: 500px;
+      position: relative;
+
+
+      @media screen and (min-width: 960px){
+        max-width: $width-c;
+      }
+
+      &-left, &-right{
+
+        .four-line{
+          right: 10px; 
+          bottom: -2px;
+          left: 10px;
+          
+          @media screen and (min-width: 680px){
+            right: 40px; 
+            bottom: -3px;  
+            left: 40px;
+          }
+        }
+
+        .three-line{
+          right: 10px;
+          bottom: -35px; 
+          left: 10px;
+
+          @media screen and (min-width: 680px){
+            right: 40px; 
+            bottom: -42px;  
+            left: 40px;
+          }
+        }
+
+        .three-line-long{
+          right: 10px; 
+          bottom: -34px; 
+          left: 10px;
+
+          @media screen and (min-width: 680px){
+            right: 40px; 
+            bottom: -29px;  
+            left: 40px;
+          }
+        }
+
+
+        h2{
+          font-size: 1.5em;
+          margin: 0;
+          position: absolute;
+          text-shadow: 1px 1px rgba(255,255,255,0.15);
+          text-transform: uppercase;
+
+          h2 >*{
+            margin: 0;
+            padding: 0;
+          }
+
+
+          .title-01{
+            display: block;
+            font-size: .75em;
+            font-weight: 200;
+            line-height: .85em;
+
+            @media screen and (min-width: 680px){
+              font-size: .65em;
+              line-height: 1.1em;
+            }
+          }
+
+          .title-02{
+            display: block;
+            font-family: bodoni, serif;
+            font-size: 1.5em;
+            font-weight: 400;
+            letter-spacing: -.0625em;
+            line-height: .75em;
+            margin: -20px 0 0;
+
+            @media screen and (min-width: 680px){
+              font-size: 2em;
+              margin: -15px 0 0;
+            }
+          }
+
+          .title-03{
+            display: block;
+            font-family: bodoni, serif;
+            font-size: 3em;
+            font-weight: 400;
+            letter-spacing: -.0625em;
+            line-height: .75em;
+            margin: -20px 0 0;
+
+            @media screen and (min-width: 680px){
+              font-size: 5em;
+              line-height: .7em;
+              margin: -15px 0 0;
+            }
+          }
+
+          .title-03-long{
+            display: block;
+            font-family: bodoni, serif;
+            font-size: 1.75em;
+            font-weight: 400;
+            letter-spacing: -.0625em;
+            line-height: .75em;
+            margin: -20px 0 0;
+
+            @media screen and (min-width: 680px){
+              font-size: 5em;
+              line-height: .5em;
+              margin: -5px 0 0;
+            }
+          }
+
+
+          .title-04{
+            display: block;
+            font-family: bodoni, serif;
+            font-size: 1.5em;
+            font-weight: 400;
+            letter-spacing: -.0625em;
+            line-height: .5em;
+            margin: -30px 0 0;
+
+            @media screen and (min-width: 680px){
+              font-size: 2.5em;
+              line-height: .5em;
+              margin: -25px 0 0;
+            }
+          }
+        }
+      }
+
+      &-left{
+        float: left;
+      }
+
+      &-right{
+        float: right;
+
+        h2{
+          text-align: right;
+        }
+      }
+    }
+
+    ul{
+      margin: 0 auto;
+      max-width: 275px;
+      width: $width-a;
+
+      @media screen and (min-width: $width-d){
+        max-width: $width-c;
+      }
+
+      li{
+        align: top;
+        float: right;
+        margin: 11px;
+        max-width: 285px;
+        min-width: 275px;
+
+        figure{
+          height: 300px;
+          margin: 20px;
+          position: relative;
+
+          figcaption{
+            background: $theme-b;
+            height: 75px;
+            padding: $padding;
+            width: $width-a;
+          }
+        }
+      }
+    }
+  }
+}
+
+nav{
+  background: $theme-a;
+  color: $color-a;
+  margin: 0;
+  overflow: auto;
+  padding: $padding*2 0;
+  position: relative;
+  width: $width-a;
+  z-index: 99;
+
+  @media screen and (min-width: 680px){
+    padding: $padding*2;
+  }
+
+  ul{
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+
+    li{
+      display: inline-block;
+      font-size: .75em;
+      list-style: none;
+      margin: 0 10px;
+      text-transform: uppercase;
+
+      a {
+        color: $color-a;
+        text-decoration: none;
+
+        &:hover{
+          color: $color-b;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+// _body.scss
+
+/*---- Main Body Styles ----*/
+.interior-title{
+  margin: 10px auto -10px;
+  max-width: $width-c;
+  min-width: $width-d;
+  width: 100%;
+
+  h3{
+    color: $color-c;
+    font-family: $font-a;
+    font-size: 1.75em;
+    font-weight: 400;
+    height: 50px;
+    line-height: 1em;
+    padding: 0 $padding*2;
+    position: relative;
+    text-align: left;
+    text-transform: uppercase;
+    width: $width-a;
+
+
+    a {
+      text-decoration:none;
+    }
+  }
+}
+
+
+.grid{
+  background-color: $theme-d;
+  margin: 10px 0 40px;
+  max-width: $width-c;
+  min-width: $width-d;
+  padding: 0 0 $padding*8;
+  width: 100%;
+
+  @media screen and (min-width: 960px){
+      margin: 10px auto 50px;
+      width: 880px;
+    }
+
+  &:after{
+    clear: both;
+    content: "";
+    display: table;
+  }
+
+  h3{
+    color: $color-c;
+    font-family: $font-a;
+    font-size: 1.75em;
+    font-weight: 400;
+    line-height: 1em;
+    margin: 0;
+    padding: $padding*2 $padding*2;
+    position: relative;
+    text-align: left;
+    text-transform: uppercase;
+    width: $width-a;
+
+    @media screen and (min-width: 680px){
+      padding: $padding*2 $padding*4;
+    }
+
+    a {
+      text-decoration:none;
+    }
+  }
+
+  ul{
+    margin: 0;
+    max-width: 900px;
+    min-width: 200px;
+    padding: 0 10px;
+
+    // @media screen and (min-width: 480px){
+    //   width:$width-a * .5;
+    // }
+
+    @media screen and (min-width: 680px){
+      padding: 0 20px;
+    }
+
+    @media screen and (min-width: 960px){
+      margin: 0 auto;
+      width:$width-a;
+    }
+
+    &:after{
+      clear: both;
+      content: "";
+      display: table;
+    }
+
+    @media screen and (min-width: 960px){
+      margin: 0 auto;
+    }
+
+    li{
+      align: top;
+
+      a > figure:hover{
+          border: 1px solid $color-b;
+        }
+
+      figure{
+        border: 1px solid $color-f;
+        font-size: .65em;
+        margin: 0;
+        position: relative;
+
+
+        figcaption{
+          background: $theme-b;
+          /* Safari 4-5, Chrome 1-9 */
+          background: -webkit-gradient(linear, left top, right top, from($theme-b), color-stop(0.25, $theme-g), color-stop(0.5, $theme-h), color-stop(0.95, $theme-i));
+
+          /* Safari 5.1+, Chrome 10+ */
+          background: -webkit-linear-gradient(top, $theme-b, $theme-g 25%, $theme-h 50%, $theme-i 95%);
+
+          /* Firefox 3.6+ */
+          background: -moz-linear-gradient(top, $theme-b, $theme-g 25%, $theme-h 50%, $theme-i 95%);
+
+          /* IE 10 */
+          background: -ms-linear-gradient(top, $theme-b, $theme-g 25%, $theme-h 50%, $theme-i 95%);
+
+          /* Opera 11.10+ */
+          background: -o-linear-gradient(top, $theme-b, $theme-g 25%, $theme-h 50%, $theme-i 95%);
+          height: 80px;
+          line-height: 1.25em;
+          padding: $padding*2;
+          width: $width-a;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+  }    
+}
+
+/*---- Template Styles ----*/
+
+
+/*---- Holiday Central / Beauty/ Top Gifts ----*/
+
+
+.grid-a{
+
+  padding: 0 0 25px;
+
+  @media screen and (min-width: 800px){
+    padding: 0 0 60px;
+  }
+
+  h3{
+    background: $theme-a;
+    color: $color-a;
+    height: 80px;
+    line-height: 2.5em;
+    margin: 0;
+    max-width: 500px;
+    min-width: 320px;
+    text-align: left;
+    text-transform: uppercase;
+    top: 0; left: 0; bottom: 0; right: 0;
+    transform: translateY(0);
+    transition: transform .75s;
+    z-index: 999;
+
+    @media screen and (min-width: 760px){
+      margin: 0 auto;
+      text-align: center;
+    }
+    
+    @media screen and (min-width: 960px){
+      transform: translateY(240px);
+    }
+  }
+
+  ul{
+    margin: 25px auto 0;
+    max-width: 200px;
+    padding: 0;
+
+    @media screen and (min-width: 400px){
+      max-width: 400px;
+    }
+
+    @media screen and (min-width: 600px){
+      max-width: 600px;
+    }
+
+    @media screen and (min-width: 800px){
+      margin: 0 auto;
+      max-width: 800px;
+    }
+
+    &:after {
+      clear:both;
+      content: "";
+      display: table;
+    }
+
+    li{
+      margin: 0 auto;
+
+      @media screen and (min-width: 400px){
+        float: left;   
+      }
+
+      a > figure:hover{
+          border: 1px solid $color-b;
+        }
+
+      figure{
+        border: 1px solid #eee;
+      }
+      
+      &:first-child {
+
+        @media screen and (min-width: 400px){
+          float: left;
+        }
+        
+        @media screen and (min-width: 960px){
+          float: right;
+        }
+      }
+    }
+  }
+}
+
+/*---- Health & Nutrition / Get the Look ----*/
+
+.grid-b{
+  padding: 0 0 $padding*8;
+
+  ul{
+
+    li{
+      float: left;
+      list-style: none;
+      margin-bottom: 5px;
+      margin-right: .5%;
+      max-width: 260px;
+      min-width: 256px;
+
+      @media screen and (min-width: 640px){
+          margin-right: 4%;
+
+          &:last-child{
+            margin-right: 0;
+          }
+        }
+
+      figure{
+        height: 300px;
+      }
+
+      ul{
+        padding: 0;
+        width: $width-a;
+
+        li{
+          float: left;
+          list-style: none;
+          margin: 5px 2px;
+          min-width: 100px;
+          width: 48%;
+
+          figure{
+            border: $color-f solid 1px;
+            height: 200px;
+            position: relative;
+
+            figcaption{
+              background: $theme-b;
+              /* Safari 4-5, Chrome 1-9 */
+              background: -webkit-gradient(linear, left top, right top, from($theme-b), color-stop(0.25, $theme-g), color-stop(0.5, $theme-h), color-stop(0.75, $theme-i));
+
+              /* Safari 5.1+, Chrome 10+ */
+              background: -webkit-linear-gradient(top, $theme-b, $theme-g 25%, $theme-h 50%, $theme-i 75%);
+
+              /* Firefox 3.6+ */
+              background: -moz-linear-gradient(top, $theme-b, $theme-g 25%, $theme-h 50%, $theme-i 75%);
+
+              /* IE 10 */
+              background: -ms-linear-gradient(top, $theme-b, $theme-g 25%, $theme-h 50%, $theme-i 75%);
+
+              /* Opera 11.10+ */
+              background: -o-linear-gradient(top, $theme-b, $theme-g 25%, $theme-h 50%, $theme-i 75%);
+              // background: $theme-c;
+              /* Safari 4-5, Chrome 1-9 */
+              // background: -webkit-gradient(linear, left top, right top, from($theme-c), color-stop(0.5, #fff));
+
+              /* Safari 5.1+, Chrome 10+ */
+              // background: -webkit-linear-gradient(top, $theme-c, #fff 50%);
+
+              /* Firefox 3.6+ */
+              // background: -moz-linear-gradient(top, $theme-c, #fff 50%);
+
+              /* IE 10 */
+              // background: -ms-linear-gradient(top, $theme-c, #fff 50%);
+
+              /* Opera 11.10+ */
+              // background: -o-linear-gradient(top, $theme-c, #fff 50%);
+              color: #fff;
+              height: 100px;
+              line-height: 1.25em;
+              padding: $padding*2 $padding 0;
+              width: $width-a;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*---- Home & Garden / Top Toys / Top Electronics / Top Entertainment ----*/
+
+.grid-c{
+
+  ul{
+    margin: 0 25px;
+    padding-top: 20px;
+
+    @media screen and (min-width: 960px){
+      margin: 0 auto 10px;
+    }
+
+    li{
+      float: left;
+      margin-right: 2%;
+      margin-bottom: 5px;
+
+      &:last-child{
+        margin-right: 0;
+      }
+
+
+
+      figure{
+        height: 250px;
+      }
+    }
+  }
+}
+
+/*---- 25 Days of Deals ----*/
+
+.grid-d{
+  background: $theme-c;
+  padding: 0 0 $padding*16;
+
+  ul{
+
+    li{
+      float: left;
+      margin: 5px 32px;
+      max-width: 265px;
+      min-width: 256px;
+
+      @media screen and (min-width: 480px){
+          margin: 5px;
+        }
+
+      figure{
+        height: 300px;
+        margin: 20px;
+      }
+    }
+  }
+}
+
+/*---- Affiliate ----*/
+
+.grid-e{
+
+  ul{
+
+    li{
+      float: left;
+      margin-right: 2.5%;
+      margin-bottom: 5px;
+
+      &:last-child{
+        margin-right: 0;
+      }
+
+      figure{
+        height: 250px;
+      }
+    }
+  }
+}
+
+
+/*---- Home & Garden / Top Toys / Top Electronics / Top Entertainment ----*/
+
+.grid-f{
+
+  ul{
+    margin: 0;
+
+    @media screen and (min-width: 960px){
+      margin: 0 auto;
+    }
+
+    li{
+      float: left;
+      margin-right: 4%;
+      margin-bottom: 5px;
+
+      &:last-child{
+        margin-right: 0;
+      }
+
+
+      figure{
+        background-size: 125px 125px;
+        height: 250px;
+      }
+    }
+  }
+}
+
+.grid-g{
+  margin-bottom: 20px;
+  padding: 10px 0;
+
+  ul{
+    margin: 0;
+
+    @media screen and (min-width: 960px){
+      margin: 0 auto;
+    }
+
+    li{
+      float: left;
+      margin-right: 4%;
+      margin-bottom: 5px;
+
+      &:last-child{
+        margin-right: 4%;
+      }
+
+      @media screen and (min-width: 640px){
+        margin-right: 4%;
+
+        &:last-child{
+          margin-right: 0;
+        }
+      }
+
+      figure{
+        height: 185px;
+        width: 185px;
+      }
+    }
+  }
+}
+
+.grid-h{
+  margin-bottom: 20px;
+  padding: 10px 0;
+
+  ul{
+    margin: 0;
+
+    @media screen and (min-width: 960px){
+      margin: 0 auto;
+    }
+
+    li{
+      float: left;
+      margin-right: 2%;
+      margin-bottom: 5px;
+
+      &:last-child{
+        margin-right: 0;
+      }
+
+      figure{
+        height: 120px;
+        width: 120px;
+      }
+    }
+  }
+}
+
+.grid-i{
+  margin-bottom: 20px;
+  padding: 10px 0;
+
+  ul{
+    margin: 0;
+
+    @media screen and (min-width: 960px){
+      margin: 0 auto;
+    }
+
+    li{
+      float: left;
+      margin-right: 0;
+      margin-bottom: 5px;
+
+      figure{
+        max-width: 840px;
+        min-width: 320px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+// _grid.scss
+
+
+/*---- Grid ----*/
+
+.col{
+  display: block;
+}
+
+.span_1{
+  background: #555;
+  max-width: 880px;
+  min-width: 320px;
+  width: $width-a;
+}
+
+.span_1_of_2{
+  background: #555;
+  height: 400px;
+  min-width: 320px;
+  width: $width-a/2;
+}
+
+.span_1_of_3{
+  width: 30%;
+}
+
+.span_1_of_4{
+  min-width: 198px;
+  width: $width-a/4;
+}
+
+.span_2_of_4{
+  min-width: 198px;
+  width: $width-a/4;
+  transition: min-width 0.75s;
+  
+  @media screen and (min-width: 960px){
+    min-width: 400px;
+  }
+}
+
+.span_1_of_4-b{
+  min-width: 180px;
+  width: ($width-a/4)-3;
+}
+
+
+.span_1_of_5{
+  min-width: 140px;
+  width: 18%;
+}
+
+.span_1_of_6{
+  min-width: 120px;
+  width: 15%;
+}
+
+// _buttons.scss
+
+/*---- Buttons ----*/
+#holiday-central{
+  .button {
+    background: $color-b;
+    border: none;
+    border-radius: 0;
+    color: $color-a;
+    cursor: pointer;
+    display: block;
+    font-size: .75em;
+    font-weight: 400;
+    height: 35px;
+    line-height: 3em;
+    margin: 20px auto 0;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 150px;
+
+    // @media screen and (min-width: 480px){
+    //   margin: 20px 100px 0;
+    // }
+
+    @media screen and (min-width: 760px){
+      margin: 30px auto -25px;
+    }
+
+    &:hover {
+      background: $color-d;
+      border: none;
+      color: $color-a;
+      text-decoration: none;
+    }
+  }
+
+  .kit-btn {
+    bottom: 0;
+    border: none;
+    display: block;
+    font-weight: 400;
+    line-height: 3.5em;
+    height: 30px;
+    margin: 5px -5px 0;
+    position: absolute;
+    width: 100%;
+  }
+
+  .deal-btn {
+    bottom: 0;
+    margin: 0 auto 10px;
+    width: 240px;
+  }
+}
+
+
+
+
